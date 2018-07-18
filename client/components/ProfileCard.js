@@ -25,7 +25,7 @@ function ProfileCard(props) {
         title="Profile Picture"
       />
       <CardContent>
-        <Typography gutterBottom variant="headline" component="h2">
+        <Typography gutterBottom variant="headline" component="h1">
           Maria Victoria Perez Rios
         </Typography>
         <Typography component="p">

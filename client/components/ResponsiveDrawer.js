@@ -18,6 +18,8 @@ import CollectionIcon from '@material-ui/icons/Collections';
 import ContactIcon from '@material-ui/icons/Contacts';
 import ProfileCard from './ProfileCard';
 import SocialMedia from './SocialMedia';
+import ProfileInfo from './ProfileInfo';
+import PorfolioInfo from './PorfolioInfo';
 
 const drawerWidth = 240;
 
@@ -155,7 +157,9 @@ class ResponsiveDrawer extends React.Component {
         </Hidden>
         <main className={classes.content}>
           <div className={classes.toolbar} />
-          <Typography noWrap>{'You think water moves fast? You should see ice.'}</Typography>
+          <ProfileInfo />
+          <PorfolioInfo />
+          {/* <Typography noWrap>{'You think water moves fast? You should see ice.'}</Typography> */}
         </main>
       </div>
     );
