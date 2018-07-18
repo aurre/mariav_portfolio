@@ -5,18 +5,25 @@ import Drawer from '@material-ui/core/Drawer';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import Hidden from '@material-ui/core/Hidden';
-import Divider from '@material-ui/core/Divider';
 import MenuIcon from '@material-ui/icons/Menu';
+import PersonIcon from '@material-ui/icons/Person';
+import FolderIcon from '@material-ui/icons/Folder';
+import CollectionIcon from '@material-ui/icons/Collections';
+import ContactIcon from '@material-ui/icons/Contacts';
+import ProfileCard from './ProfileCard';
+import SocialMedia from './SocialMedia';
 
 const drawerWidth = 240;
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
-    height: 430,
     zIndex: 1,
     overflow: 'hidden',
     position: 'relative',
@@ -63,11 +70,42 @@ class ResponsiveDrawer extends React.Component {
 
     const drawer = (
       <div>
-        <div className={classes.toolbar} />
-        <Divider />
-        <List></List>
-        <Divider />
-        <List></List>
+        <ProfileCard />
+        <List>
+          <ListItem button>
+            <ListItemIcon>
+              <PersonIcon />
+            </ListItemIcon>
+            <ListItemText insert primary="PERFIL" />
+          </ListItem>
+        </List>
+        <List>
+          <ListItem button>
+            <ListItemIcon>
+              <FolderIcon />
+            </ListItemIcon>
+            <ListItemText insert primary="PORTAFOLIO" />
+          </ListItem>
+        </List>
+        <List>
+          <ListItem button>
+            <ListItemIcon>
+              <CollectionIcon />
+            </ListItemIcon>
+            <ListItemText insert primary="GALERIA" />
+          </ListItem>
+        </List>
+        <List>
+          <ListItem button>
+            <ListItemIcon>
+              <ContactIcon />
+            </ListItemIcon>
+            <ListItemText insert primary="CONTACTO" />
+          </ListItem>
+        </List>
+        <div>
+          <SocialMedia />
+        </div>
       </div>
     );
 
@@ -84,7 +122,7 @@ class ResponsiveDrawer extends React.Component {
               <MenuIcon />
             </IconButton>
             <Typography variant="title" color="inherit" noWrap>
-              Responsive drawer
+              Maria Victoria
             </Typography>
           </Toolbar>
         </AppBar>
