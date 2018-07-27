@@ -9,6 +9,9 @@ const PorfolioInfo = () => {
       <Typography gutterBottom variant="headline" component="h5">
         PORTAFOLIO
       </Typography>
+      <h6>¿Qué se puede tratar con Hipnosis?</h6>
+      <p>Se pueden tratar mediante la Hipnosis enfermedades emocionales como:</p>
+
       <InteractiveList />
     </CardContent>
   )

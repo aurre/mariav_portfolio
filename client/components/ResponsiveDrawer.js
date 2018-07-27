@@ -20,6 +20,7 @@ import ProfileCard from './ProfileCard';
 import SocialMedia from './SocialMedia';
 import ProfileInfo from './ProfileInfo';
 import PorfolioInfo from './PorfolioInfo';
+import Gallery from './Gallery';
 
 const drawerWidth = 240;
 
@@ -159,7 +160,7 @@ class ResponsiveDrawer extends React.Component {
           <div className={classes.toolbar} />
           <ProfileInfo />
           <PorfolioInfo />
-          {/* <Typography noWrap>{'You think water moves fast? You should see ice.'}</Typography> */}
+          <Gallery />
         </main>
       </div>
     );
