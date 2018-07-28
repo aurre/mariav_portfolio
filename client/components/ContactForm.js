@@ -9,6 +9,13 @@ import Card from '@material-ui/core/Card';
 import TextField from '@material-ui/core/TextField';
 import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
+import ListItem from '@material-ui/core/ListItem';
+import List from '@material-ui/core/List';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import EmailIcon from '@material-ui/icons/Email'; 
+import ListItemText from '@material-ui/core/ListItemText';
+import LocationIcon from '@material-ui/icons/LocationOn';
+import CallIcon from '@material-ui/icons/Call';
 
 
 const styles = theme => ({
@@ -32,7 +39,9 @@ const styles = theme => ({
   card: {
     maxWidth: 400,
     margin: '0 auto',
+    height: '350px',
   },
+ 
 });
 
 function ContactForm(props) {
@@ -92,7 +101,39 @@ function ContactForm(props) {
         </Grid>
 
         <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>xs=12 sm=6</Paper>
+          <Paper className={classes.paper}>
+          <Card className={classes.card}>
+          <CardContent>
+          <Typography component="h6">
+            Alternativamente me puede contactar directamente por algunos de mis contactos listados debajo
+          </Typography>
+         </CardContent>
+         <List>
+          <ListItem>
+            <ListItemIcon>
+              <EmailIcon />
+            </ListItemIcon>
+            <ListItemText insert primary="mariavictoria.perezrios@yahoo.com" />
+          </ListItem>
+        </List>
+        <List>
+          <ListItem>
+            <ListItemIcon>
+              <LocationIcon />
+            </ListItemIcon>
+            <ListItemText insert primary="84 A #37 B 34,Medellin, Colombia" />
+          </ListItem>
+        </List>
+        <List>
+          <ListItem>
+            <ListItemIcon>
+              <CallIcon />
+            </ListItemIcon>
+            <ListItemText insert primary="310 430 0657" />
+          </ListItem>
+        </List>
+          </Card>
+          </Paper>
         </Grid>
       </Grid>
     </div>
