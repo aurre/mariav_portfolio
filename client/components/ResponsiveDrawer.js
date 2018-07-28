@@ -21,6 +21,7 @@ import SocialMedia from './SocialMedia';
 import ProfileInfo from './ProfileInfo';
 import PorfolioInfo from './PorfolioInfo';
 import Gallery from './Gallery';
+import ContactForm from './ContactForm';
 
 const drawerWidth = 240;
 
@@ -161,6 +162,7 @@ class ResponsiveDrawer extends React.Component {
           <ProfileInfo />
           <PorfolioInfo />
           <Gallery />
+          <ContactForm/>
         </main>
       </div>
     );

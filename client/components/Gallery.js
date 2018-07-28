@@ -32,15 +32,13 @@ const Gallery =  (props) => {
         <Card className={classes.card}>
  
     <Player
-    //   playsInline
-    //   poster="/assets/poster.png"
       src="https://s3.amazonaws.com/aurre/TLP-ira-explosiva.mp4"
       style={{width: '100px'}}
     >
     <ControlBar autoHide={false}>
     <ForwardControl seconds={5} order={3.1} />
     <ForwardControl seconds={10} order={3.2} />
-    <ForwardControl seconds={30} order={3.3} />
+    <ForwardControl seCONTACTOconds={30} order={3.3} />
     </ControlBar>
     </Player>
     <CardContent>
