@@ -1,7 +1,7 @@
 import React from 'react';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import InteractiveList from './InfoGrid'
+import InfoGrid from './InfoGrid'
 
 const PorfolioInfo = () => {
   return (
@@ -12,7 +12,7 @@ const PorfolioInfo = () => {
       <h6>¿Qué se puede tratar con Hipnosis?</h6>
       <p>Se pueden tratar mediante la Hipnosis enfermedades emocionales como:</p>
 
-      <InteractiveList />
+      <InfoGrid />
     </CardContent>
   )
 }
