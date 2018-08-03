@@ -12,7 +12,7 @@ import Button from '@material-ui/core/Button';
 import ListItem from '@material-ui/core/ListItem';
 import List from '@material-ui/core/List';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import EmailIcon from '@material-ui/icons/Email'; 
+import EmailIcon from '@material-ui/icons/Email';
 import ListItemText from '@material-ui/core/ListItemText';
 import LocationIcon from '@material-ui/icons/LocationOn';
 import CallIcon from '@material-ui/icons/Call';
@@ -41,7 +41,7 @@ const styles = theme => ({
     margin: '0 auto',
     height: '350px',
   },
- 
+
 });
 
 function ContactForm(props) {
@@ -53,9 +53,9 @@ function ContactForm(props) {
         <Typography gutterBottom variant="headline" component="h5">
             CONTACTO
         </Typography>
-        </CardContent>
+      </CardContent>
       <Grid container spacing={24}>
-       
+
         <Grid item xs={12} sm={6}>
         <Paper className={classes.paper}>
         <Card className={classes.card}>
@@ -94,7 +94,7 @@ function ContactForm(props) {
           <Button size="small" color="primary">
             Enviar
           </Button>
-        </CardActions>
+          </CardActions>
         </form>
         </Card>
         </Paper>
@@ -107,21 +107,21 @@ function ContactForm(props) {
           <Typography component="h6">
             Alternativamente me puede contactar directamente por algunos de mis contactos listados debajo
           </Typography>
-         </CardContent>
+          </CardContent>
          <List>
           <ListItem>
             <ListItemIcon>
               <EmailIcon />
             </ListItemIcon>
-            <ListItemText insert primary="mariavictoria.perezrios@yahoo.com" />
+            <ListItemText  primary="mariavictoria.perezrios@yahoo.com" />
           </ListItem>
-        </List>
+         </List>
         <List>
           <ListItem>
             <ListItemIcon>
               <LocationIcon />
             </ListItemIcon>
-            <ListItemText insert primary="84 A #37 B 34,Medellin, Colombia" />
+            <ListItemText  primary="84 A #37 B 34,Medellin, Colombia" />
           </ListItem>
         </List>
         <List>
@@ -129,7 +129,7 @@ function ContactForm(props) {
             <ListItemIcon>
               <CallIcon />
             </ListItemIcon>
-            <ListItemText insert primary="310 430 0657" />
+            <ListItemText  primary="310 430 0657" />
           </ListItem>
         </List>
           </Card>

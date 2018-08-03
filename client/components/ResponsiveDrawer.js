@@ -8,7 +8,6 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import Hidden from '@material-ui/core/Hidden';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -22,6 +21,8 @@ import ProfileInfo from './ProfileInfo';
 import PorfolioInfo from './PorfolioInfo';
 import Gallery from './Gallery';
 import ContactForm from './ContactForm';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
 
 const drawerWidth = 240;
 
@@ -60,9 +61,15 @@ const styles = theme => ({
   },
 });
 
+
 class ResponsiveDrawer extends React.Component {
   state = {
     mobileOpen: false,
+    value: 0,
+  };
+
+  handleChange = (event, value) => {
+    this.setState({ value });
   };
 
   handleDrawerToggle = () => {
@@ -71,6 +78,7 @@ class ResponsiveDrawer extends React.Component {
 
   render() {
     const { classes, theme } = this.props;
+    const { value } = this.state;
 
     const drawer = (
       <div>
@@ -80,7 +88,7 @@ class ResponsiveDrawer extends React.Component {
             <ListItemIcon>
               <PersonIcon />
             </ListItemIcon>
-            <ListItemText insert primary="PERFIL" />
+            <ListItemText  primary="PERFIL" />
           </ListItem>
         </List>
         <List>
@@ -88,7 +96,7 @@ class ResponsiveDrawer extends React.Component {
             <ListItemIcon>
               <FolderIcon />
             </ListItemIcon>
-            <ListItemText insert primary="PORTAFOLIO" />
+            <ListItemText  primary="PORTAFOLIO" />
           </ListItem>
         </List>
         <List>
@@ -96,7 +104,7 @@ class ResponsiveDrawer extends React.Component {
             <ListItemIcon>
               <CollectionIcon />
             </ListItemIcon>
-            <ListItemText insert primary="GALERIA" />
+            <ListItemText  primary="GALERIA" />
           </ListItem>
         </List>
         <List>
@@ -104,7 +112,7 @@ class ResponsiveDrawer extends React.Component {
             <ListItemIcon>
               <ContactIcon />
             </ListItemIcon>
-            <ListItemText insert primary="CONTACTO" />
+            <ListItemText  primary="CONTACTO" />
           </ListItem>
         </List>
         <div>
@@ -125,11 +133,16 @@ class ResponsiveDrawer extends React.Component {
             >
               <MenuIcon />
             </IconButton>
-            <Typography variant="title" color="inherit" noWrap>
-              Maria Victoria
-            </Typography>
+            <Tabs value={value} onChange={this.handleChange}>
+              <Tab label="PERFIL" />
+              <Tab label="PORTAFOLIO" />
+              <Tab label="GALERIA" />
+              <Tab label="CONTACTO" href="#basic-tabs" />
+
+            </Tabs>
           </Toolbar>
         </AppBar>
+
         <Hidden mdUp>
           <Drawer
             variant="temporary"
@@ -159,10 +172,10 @@ class ResponsiveDrawer extends React.Component {
         </Hidden>
         <main className={classes.content}>
           <div className={classes.toolbar} />
-          <ProfileInfo />
-          <PorfolioInfo />
-          <Gallery />
-          <ContactForm/>
+          {value === 0 && <ProfileInfo /> }
+          {value === 1 && <PorfolioInfo /> }
+          {value === 2 && <Gallery />}
+          {value === 3 && <ContactForm />}
         </main>
       </div>
     );
