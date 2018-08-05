@@ -61,9 +61,13 @@ class ContactForm extends React.Component {
       email: this.state.email,
       message: this.state.message,
     }
-    console.log(newMessage);
-    const response = await axios.post('/api/messages', newMessage)
-    console.log(response);
+     await axios.post('/api/messages', newMessage)
+
+     this.setState({
+       name: '',
+       email: '',
+       message: ''
+     })
   }
 
   render() {
