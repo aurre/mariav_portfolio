@@ -116,7 +116,7 @@ class ResponsiveDrawer extends React.Component {
           </Toolbar>
         </AppBar>
 
-        <Hidden mdUp>
+        {/* <Hidden mdUp>
           <Drawer
             variant="temporary"
             anchor={theme.direction === 'rtl' ? 'right' : 'left'}
@@ -131,7 +131,7 @@ class ResponsiveDrawer extends React.Component {
           >
             {drawer}
           </Drawer>
-        </Hidden>
+        </Hidden> */}
         <Hidden smDown implementation="css">
           <Drawer
             variant="permanent"
