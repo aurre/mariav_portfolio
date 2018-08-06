@@ -23,14 +23,9 @@ const Gallery =  (props) => {
 
   return (
       <div>
-          <CardContent>
-        <Typography gutterBottom variant="headline" component="h5">
-            GALERIA
-        </Typography>
-        </CardContent>
         <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
         <Card className={classes.card}>
- 
+
     <Player
       src="https://s3.amazonaws.com/aurre/TLP-ira-explosiva.mp4"
       style={{width: '100px'}}
@@ -51,7 +46,7 @@ const Gallery =  (props) => {
         </CardContent>
     </Card>
     <Card className={classes.card}>
- 
+
     <Player
     src="https://s3.amazonaws.com/aurre/dolor_emocional.mp4"
     style={{width: '100px'}}
@@ -72,7 +67,7 @@ const Gallery =  (props) => {
         </CardContent>
     </Card>
     <Card className={classes.card}>
- 
+
     <Player
     src="https://s3.amazonaws.com/aurre/TLP-beneficios.mp4"
     style={{width: '100px'}}
@@ -101,5 +96,5 @@ const Gallery =  (props) => {
 Gallery.propTypes = {
     classes: PropTypes.object.isRequired,
   };
-  
+
 export default withStyles(styles)(Gallery);
