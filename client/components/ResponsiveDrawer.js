@@ -85,8 +85,8 @@ class ResponsiveDrawer extends React.Component {
       <div>
         <ProfileCard />
         <div>
-          <HomePageImage />
-          <br />
+          {/* <HomePageImage />
+          <br /> */}
 
           <SocialMedia />
 
