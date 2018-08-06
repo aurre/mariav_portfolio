@@ -84,38 +84,6 @@ class ResponsiveDrawer extends React.Component {
     const drawer = (
       <div>
         <ProfileCard />
-        {/* <List>
-          <ListItem button>
-            <ListItemIcon>
-              <PersonIcon />
-            </ListItemIcon>
-            <ListItemText  primary="PERFIL" />
-          </ListItem>
-        </List>
-        <List>
-          <ListItem button>
-            <ListItemIcon>
-              <FolderIcon />
-            </ListItemIcon>
-            <ListItemText  primary="PORTAFOLIO" />
-          </ListItem>
-        </List>
-        <List>
-          <ListItem button>
-            <ListItemIcon>
-              <CollectionIcon />
-            </ListItemIcon>
-            <ListItemText  primary="GALERIA" />
-          </ListItem>
-        </List>
-        <List>
-          <ListItem button>
-            <ListItemIcon>
-              <ContactIcon />
-            </ListItemIcon>
-            <ListItemText  primary="CONTACTO" />
-          </ListItem>
-        </List> */}
         <div>
           <HomePageImage />
           <br />
