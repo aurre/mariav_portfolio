@@ -23,6 +23,7 @@ import Gallery from './Gallery';
 import ContactForm from './ContactForm';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import HomePageImage from './HomePageImage';
 
 const drawerWidth = 240;
 
@@ -83,7 +84,7 @@ class ResponsiveDrawer extends React.Component {
     const drawer = (
       <div>
         <ProfileCard />
-        <List>
+        {/* <List>
           <ListItem button>
             <ListItemIcon>
               <PersonIcon />
@@ -114,9 +115,13 @@ class ResponsiveDrawer extends React.Component {
             </ListItemIcon>
             <ListItemText  primary="CONTACTO" />
           </ListItem>
-        </List>
+        </List> */}
         <div>
+          <HomePageImage />
+          <br />
+
           <SocialMedia />
+
         </div>
       </div>
     );
@@ -137,7 +142,7 @@ class ResponsiveDrawer extends React.Component {
               <Tab label="PERFIL" />
               <Tab label="PORTAFOLIO" />
               <Tab label="GALERIA" />
-              <Tab label="CONTACTO" href="#basic-tabs" />
+              <Tab label="CONTACTO" />
 
             </Tabs>
           </Toolbar>
