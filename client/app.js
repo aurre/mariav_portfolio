@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { ResponsiveDrawer } from './components';
+// import { ResponsiveDrawer } from './components';
 import Routes from './routes';
 
 const App = () => {
   return (
     <div>
-      <ResponsiveDrawer />
+      {/* <ResponsiveDrawer /> */}
       <Routes />
     </div>
   );
