@@ -33,11 +33,12 @@ img {
 }
 
 .site-logo {
-  background: url(../img/site-logo.png) 50% no-repeat;
+  background: url(../img/site-logo.jpg) 50% no-repeat;
   background-size: cover;
   height: 120px;
   width: 120px;
   margin: 15px auto;
+  border-radius: 50%;
 }
 
 .is-compact .site-logo {
@@ -105,6 +106,10 @@ img {
   color: #fff;
   height: 290px;
   background: url("../img/cover.jpg") center/cover;
+}
+
+.card-image-support {
+  background: url("../img/support.jpg") center/cover;
 }
 
 .event-card {
@@ -175,8 +180,8 @@ img {
 }
 
 img.article-image {
-  width: 100%;
-  height: auto;
+  width: "320";
+  height: "240";
 }
 
 .demo-card-image.mdl-card {
