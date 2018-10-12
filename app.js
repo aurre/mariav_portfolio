@@ -14,7 +14,7 @@ app.post('/', (req, res, next) => {
     req.body._replyto
   }, <br> Mensaje: ${req.body.message}</p>`;
 
-  const email = 'mariavictoria.perezrios@yahoo.com';
+  const email = 'aurrecochearaysa@gmail.com';
 
   const mailOptions = {
     from: 'frontdesk.chicago17@gmail.com',
