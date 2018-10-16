@@ -1,10 +1,11 @@
 const nodemailer = require('nodemailer');
+const pass = require('./secret');
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
-    user: 'frontdesk.chicago17@gmail.com',
-    pass: 'v4H3@=psQE.A7:s>eW',
+    user: 'mariavictoria.marketing@gmail.com',
+    pass: process.env.EMAIL_PASSWORD,
   },
 });
 
