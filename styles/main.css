@@ -44,7 +44,7 @@ img {
   background-size: cover;
   height: 150px;
   width: 150px;
-  margin-left: 2rem;
+  margin-left: 15rem;
 }
 
 .is-compact .site-logo {
@@ -84,7 +84,8 @@ img {
 }
 
 .mdl-layout__header .mdl-layout__drawer-button {
-  color: #fff;
+  color: rgb(31, 29, 29);
+  background-color: #fff;
 }
 
 .mdl-layout__content {
