@@ -9,7 +9,10 @@ img {
 .site-header .mdl-layout__header-row {
   padding: 0;
   -ms-flex-pack: center;
-  /* justify-content: baseline; */
+}
+
+.color {
+  color: black !important;
 }
 
 .bg {
