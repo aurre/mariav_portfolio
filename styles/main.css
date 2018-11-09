@@ -40,7 +40,7 @@ img {
 }
 
 .site-logo {
-  background: url(../img/cover.jpg) 50% no-repeat;
+  background: url(../img/marketing-header.png) 50% no-repeat;
   background-size: cover;
   height: 150px;
   width: 150px;
@@ -113,15 +113,15 @@ img {
 .welcome-card > .mdl-card__title {
   color: #fff;
   height: 290px;
-  background: url('../img/cover.jpg') center/cover;
+  background: url('../img/home-page-banner.png') center/cover;
 }
 
 .card-image-support {
-  background: url('../img/support.jpg') center/cover;
+  background: url('../img/profile-image.png') center/cover;
 }
 
 .event-card {
-  background: #3e4eb8;
+  background: #424242;
 }
 
 .event-card .mdl-card__actions {
